@@ -17,3 +17,6 @@ git config user.email "zonayed@awesomecompany.com"
 $ git remote add origin https://github.com/ridwan-pust/AJAX_MVC.git
 
 git remote set-url origin https://github.com/ridwan-pust/AJAX_MVC.git
+
+
+change show
