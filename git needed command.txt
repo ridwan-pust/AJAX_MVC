@@ -1,0 +1,19 @@
+https://github.com/ri-rokon/AjaxCRUD_MVC.git
+
+
+git remote add origin https://github.com/ri-rokon/AjaxCRUD_MVC.git
+
+git push origin master
+
+
+//পারসোনাল প্রজেক্টের জন্য পারসোনাল ইমেইল ইউজ করে গিট কনফিগার করা হয়েছে
+git config user.name "Ridwanul Islam"
+git config user.email "ridwan.pust@gmail.com"
+//অফিসের প্রজেক্ট কনফিগার করা হয়েছে অফিসের ইমেইল দিয়ে
+git config user.name "Zonayed Ahmed"
+git config user.email "zonayed@awesomecompany.com"
+
+
+$ git remote add origin https://github.com/ridwan-pust/AJAX_MVC.git
+
+git remote set-url origin https://github.com/ridwan-pust/AJAX_MVC.git
