@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <thead >
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+        </tr>
+    </thead>
+    <tbody class="tbody">
+
+    </tbody>
+</table>
+
+@section Scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            loaddata();
+
+        });
+
+
+
+        function loaddata() {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("List","Myself",null,Context.Request.Url.Scheme)',
+                success: function (res) {
+                    console.log(res);
+                    var html = "";
+                    $.each(res, function (key, item) {
+                        html += '<tr>';
+                        html += '<td>' + item.Name + '</td>';
+                        html += '<td>' + item.Age + '</td>';
+                        html += '</tr>';
+                        $('.tbody').html(html);
+
+                    });
+                },
+                error: function (err) {
+                    alert(err.responseText);
+                }
+            })
+        }
+
+
+
+    </script>
+    
+
+
+
+}
